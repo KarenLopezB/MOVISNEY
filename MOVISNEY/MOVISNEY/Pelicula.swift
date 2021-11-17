@@ -12,4 +12,12 @@ class Pelicula {
     var nombre = ""
     var año = ""
     var duracion = ""
+    var calificacion = ""
+    
+    init(nombre: String, año: String, duracion: String, calificacion: String) {
+        self.nombre = nombre
+        self.año = año
+        self.duracion = duracion
+        self.calificacion = calificacion
+    }
 }

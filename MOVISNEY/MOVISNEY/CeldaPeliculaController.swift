@@ -14,4 +14,5 @@ class CeldaPeliculaController : UITableViewCell {
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblAno: UILabel!
     @IBOutlet weak var lblDuracion: UILabel!
+    @IBOutlet weak var lblCalificacion: UILabel!
 }

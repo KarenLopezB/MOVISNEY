@@ -23,11 +23,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="celdaPelicula" rowHeight="113" id="6Rs-ji-y2I" customClass="CeldaPeliculaController" customModule="MOVISNEY" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="113"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="celdaPelicula" rowHeight="150" id="6Rs-ji-y2I" customClass="CeldaPeliculaController" customModule="MOVISNEY" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Rs-ji-y2I" id="7C5-NB-jRy">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="112.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la pelicula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqq-63-Ia2">
@@ -48,11 +48,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqS-j9-txC">
+                                                    <rect key="frame" x="20" y="116" width="89" height="21"/>
+                                                    <string key="text" base64-UTF8="YES">
+Q2FsaWZpY2FjacOzbgA
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="EbW-YE-7C6" firstAttribute="leading" secondItem="7C5-NB-jRy" secondAttribute="leadingMargin" id="1I2-eP-ID5"/>
                                                 <constraint firstItem="SEP-9s-mlc" firstAttribute="leading" secondItem="7C5-NB-jRy" secondAttribute="leadingMargin" id="FKa-qu-M4x"/>
                                                 <constraint firstItem="EbW-YE-7C6" firstAttribute="top" secondItem="Yqq-63-Ia2" secondAttribute="bottom" constant="14" id="Kog-Pu-JuJ"/>
+                                                <constraint firstItem="aqS-j9-txC" firstAttribute="leading" secondItem="7C5-NB-jRy" secondAttribute="leadingMargin" id="N6B-aT-jGb"/>
+                                                <constraint firstItem="aqS-j9-txC" firstAttribute="top" secondItem="SEP-9s-mlc" secondAttribute="bottom" constant="14" id="Uwx-yt-Nsf"/>
                                                 <constraint firstItem="Yqq-63-Ia2" firstAttribute="leading" secondItem="7C5-NB-jRy" secondAttribute="leadingMargin" id="eDK-Qx-H7h"/>
                                                 <constraint firstItem="Yqq-63-Ia2" firstAttribute="top" secondItem="7C5-NB-jRy" secondAttribute="topMargin" id="hO6-2a-oOR"/>
                                                 <constraint firstItem="SEP-9s-mlc" firstAttribute="top" secondItem="EbW-YE-7C6" secondAttribute="bottom" constant="14" id="kmx-2S-vcr"/>
@@ -60,11 +71,16 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="lblAno" destination="EbW-YE-7C6" id="lUY-rL-Yk5"/>
+                                            <outlet property="lblCalificacion" destination="aqS-j9-txC" id="rK3-AT-QGu"/>
                                             <outlet property="lblDuracion" destination="SEP-9s-mlc" id="hZ3-cc-JdD"/>
                                             <outlet property="lblNombre" destination="Yqq-63-Ia2" id="EJ2-4R-SbT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hQp-Vl-uWo"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mM6-mm-yb0"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
