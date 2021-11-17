@@ -23,9 +23,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaPelicula") as! CeldaPeliculaController
         celda.lblNombre.text = peliculas[indexPath.row].nombre
-        celda.lblAno,text = peliculas[indexPath.row].ano
-        celda.lbl
-        
+        celda.lblAno.text = peliculas[indexPath.row].año
+        celda.lblDuracion.text = peliculas[indexPath.row].duracion
         return celda
     }
     
