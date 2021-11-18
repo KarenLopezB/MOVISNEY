@@ -35,7 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        peliculas.append(Pelicula(nombre: "La Cenicienta", año: "Año: 1950", duracion: "Duración:, 1h 16 min", calificacion: "Calificación: 4.2 / 5"))
+        peliculas.append(Pelicula(nombre: <#T##String#>, año: <#T##String#>, duracion: <#T##String#>, calificacion: <#T##String#>))
     }
 }
 
