@@ -74,6 +74,7 @@ Q2FsaWZpY2FjacOzbgA
                                             <outlet property="lblCalificacion" destination="aqS-j9-txC" id="rK3-AT-QGu"/>
                                             <outlet property="lblDuracion" destination="SEP-9s-mlc" id="hZ3-cc-JdD"/>
                                             <outlet property="lblNombre" destination="Yqq-63-Ia2" id="EJ2-4R-SbT"/>
+                                            <segue destination="5In-NI-4qp" kind="show" id="4bS-Ze-woK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -86,6 +87,7 @@ Q2FsaWZpY2FjacOzbgA
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BZ5-j3-rNs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,6 +188,9 @@ Q2FsaWZpY2FjacOzbgA
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XxC-Z7-UcH"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRY-II-7qq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

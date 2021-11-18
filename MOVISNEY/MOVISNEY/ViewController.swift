@@ -12,6 +12,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     var peliculas : [Pelicula] = []
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
