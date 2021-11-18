@@ -35,8 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        peliculas.append(Pelicula(nombre: "La Cenicienta", año: "Año: 1950", duracion: "Duración:, 1h 16 min", calificacion: "Calificación: 4.2 / 5"))
-        peliculas.append(Pelicula(nombre: <#T##String#>, año: <#T##String#>, duracion: <#T##String#>, calificacion: <#T##String#>))
+        peliculas.append(Pelicula(nombre: "La Cenicienta", año: "Año: 1950", duracion: "Duracion: 1h 16 min", calificacion: "Calificacion: 4.2 / 5", directores: "Directores: Clyde Geronimi, Hamilton Luske, Wilfred Jackson", descripcion: "Descripcion: Cenicienta vive con su madrastra y sus dos hijas, quienes la obligan a realizar todas las tareas del hogar. Mientras tanto, en palacio, los reyes deciden organizar un baile real, al que Cenicienta no puede asistir, hasta que llega su hada madrina.", estreno:  "Estreno: 17 de enero de 1951", reparto: "Reparto: Ilene Woods, Eleanor Audley, Verna Felton", cancion: "Cancion: Cinderella", vestido: "Color de vestido: Azul cielo"))
+        
     }
 }
 
