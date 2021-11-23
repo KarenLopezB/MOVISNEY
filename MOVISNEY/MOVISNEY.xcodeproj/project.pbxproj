@@ -16,6 +16,7 @@
 		3D0BFFBE27447C1B001E6236 /* MOVISNEYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BFFBD27447C1B001E6236 /* MOVISNEYUITests.swift */; };
 		3D0BFFCC27447CCA001E6236 /* Pelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BFFCB27447CCA001E6236 /* Pelicula.swift */; };
 		3D0BFFCE2744845A001E6236 /* CeldaPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BFFCD2744845A001E6236 /* CeldaPeliculaController.swift */; };
+		3D5830B4274C60DF00C79E0D /* DetallesPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5830B3274C60DF00C79E0D /* DetallesPeliculaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3D0BFFBF27447C1B001E6236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D0BFFCB27447CCA001E6236 /* Pelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelicula.swift; sourceTree = "<group>"; };
 		3D0BFFCD2744845A001E6236 /* CeldaPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPeliculaController.swift; sourceTree = "<group>"; };
+		3D5830B3274C60DF00C79E0D /* DetallesPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPeliculaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				3D0BFF9D27447C11001E6236 /* AppDelegate.swift */,
 				3D0BFFA427447C1B001E6236 /* Assets.xcassets */,
 				3D0BFFA927447C1B001E6236 /* Info.plist */,
+				3D5830B3274C60DF00C79E0D /* DetallesPeliculaController.swift */,
 			);
 			path = MOVISNEY;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				3D0BFFCC27447CCA001E6236 /* Pelicula.swift in Sources */,
 				3D0BFFA027447C12001E6236 /* ViewController.swift in Sources */,
 				3D0BFF9E27447C12001E6236 /* AppDelegate.swift in Sources */,
+				3D5830B4274C60DF00C79E0D /* DetallesPeliculaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
