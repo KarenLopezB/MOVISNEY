@@ -37,6 +37,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destino = segue.destination as! DetallesPeliculaController
         destino.pelicula = peliculas[tvPelis.indexPathForSelectedRow!.row]
+        if segue.identifier == "goToEdicion" {
+        }
+        if segue.identifier == "goToCreacion" {
+            let destino = segue.destination as! AgregarPeliculaController
+            destino.callbackAgregarPelicula = agregarPelicula
+        }
     }
     
     override func viewDidLoad() {
@@ -52,6 +58,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         peliculas.append(Pelicula(nombre: "Pocahontas", año: "Año: 1995", duracion: "Duración: 1h 21 min", calificacion: "Calificación: 3.9 / 5", directores: "Directores: Eric Goldberg, Mike Gabriel", descripcion: "Descripción: Pocahontas es la hija de Powhatan, el jefe de una tribu india de América del Norte. Un día observa la llegada de un grupo de colones ingleses, encabezados por el ambicioso gobernador Radcliff y el valiente capitán John Smith.", estreno:  "Estreno: 23 de junio de 1995", reparto: "Reparto: Mel Gibson, Irene Bedard, Christian Bale", cancion: "Canción: The Virginia Company ", vestido: "Color de vestuario: Café"))
         peliculas.append(Pelicula(nombre: "La princesa y el sapo", año: "Año: 2009", duracion: "Duración: 1h 37 min", calificacion: "Calificación: 3.5 / 5", directores: "Directores: John Musker, Ron Clements", descripcion: "Descripción: La trabajadora y ambiciosa, Tiana sueña con abrir el restaurante más fino de Nueva Orleans. Su sueño se desvía un poco cuando conoce al príncipe Naveen, quien ha sido transformado en un anfibio por el Dr. Facilier. Confundiéndola con una princesa y esperando romper el hechizo, Naveen le da un beso a la pobre Tiana, transformándola en una rana.", estreno:  "Estreno: 11 de diciembre de 2009", reparto: "Reparto: Anika Noni Rosa, Keith David, Jenifer Lewis", cancion: "Canción: Never Knew I Needed", vestido: "Color de vestido: Verde"))
         
+    }
+    
+    func agregsrPelicula(pelicula: Pelicula) {
+        peliculas.append(pelicula)
+        actualizarTablaPeliculas()
     }
 }
 

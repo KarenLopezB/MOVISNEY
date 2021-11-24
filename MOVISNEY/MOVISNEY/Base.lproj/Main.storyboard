@@ -92,7 +92,7 @@ Q2FsaWZpY2FjacOzbgA
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="6QM-VE-1fk">
                             <color key="tintColor" red="0.30829015544041449" green="0.02682947104209632" blue="0.23792498434083495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="7fh-X8-heJ" kind="show" id="wdo-aK-RFa"/>
+                                <segue destination="7fh-X8-heJ" kind="show" identifier="goToCreacion" id="wdo-aK-RFa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -444,6 +444,9 @@ Q2FsaWZpY2FjacOzbgA
                                         <state key="normal" title="Guardar">
                                             <color key="titleColor" red="0.274848286" green="0.10904966369999999" blue="0.51554404149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="doTapGuardar:" destination="7fh-X8-heJ" eventType="touchUpInside" id="VPJ-9J-d8x"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ThO-U3-AYB">
                                         <rect key="frame" x="20" y="201" width="374" height="30"/>
