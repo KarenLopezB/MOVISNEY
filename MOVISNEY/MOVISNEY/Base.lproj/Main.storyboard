@@ -245,10 +245,10 @@ Q2FsaWZpY2FjacOzbgA
             </objects>
             <point key="canvasLocation" x="-642" y="135"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalles Pelicula Controller-->
         <scene sceneID="2eu-Dp-0fM">
             <objects>
-                <viewController id="7jq-NW-Dsv" sceneMemberID="viewController">
+                <viewController id="7jq-NW-Dsv" customClass="DetallesPeliculaController" customModule="MOVISNEY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ot3-lu-oie">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,6 +272,9 @@ Q2FsaWZpY2FjacOzbgA
                                         <state key="normal" title="Eliminar">
                                             <color key="titleColor" red="0.45336787564766834" green="0.068694736098634954" blue="0.079656728372051053" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="doTapEliminar:" destination="7jq-NW-Dsv" eventType="touchUpInside" id="m24-Bt-EYl"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMj-1b-pSD">
                                         <rect key="frame" x="20" y="201" width="374" height="30"/>

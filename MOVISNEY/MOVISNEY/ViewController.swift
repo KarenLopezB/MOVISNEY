@@ -35,9 +35,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destino = segue.destination as! DetallesPeliculaController
-        destino.pelicula = peliculas[tvPelis.indexPathForSelectedRow!.row]
         if segue.identifier == "goToEdicion" {
+                let contactoSeleccionado = contactos[tvContactos.indexPathForSelectedRow!.row]
+                let destino = segue.destination as! EditarContactoController
+                destino.contacto = contactoSeleccionado
+                destino.indice = tvContactos.indexPathForSelectedRow!.row
+                destino.callbackActualizarTVContactos = actualizarTVContactos
+                destino.callbackEliminarContacto = eliminarContacto
         }
         if segue.identifier == "goToCreacion" {
             let destino = segue.destination as! AgregarPeliculaController
@@ -60,7 +64,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    func agregsrPelicula(pelicula: Pelicula) {
+    func elimianrPelicula(pelicula : Pelicula) {
+        peliculas.remove(at: indice)
+        actualizarTablaPeliculas()
+    }
+    
+    func agregarPelicula(pelicula : Pelicula) {
         peliculas.append(pelicula)
         actualizarTablaPeliculas()
     }

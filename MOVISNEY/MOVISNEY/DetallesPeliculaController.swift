@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 
 class DetallesPeliculaController : UIViewController {
-    
+
+    var indice : Int = -1
+    var callbackEliminarPelicula : ((Pelicula) -> Void)?
+
     var pelicula : Pelicula = Pelicula(nombre: "", año: "", duracion: "", calificacion: "", directores: "", descripcion: "", estreno: "", reparto: "", cancion: "", vestido: "")
     
     @IBOutlet weak var lblNombre1: UILabel!
@@ -37,5 +40,8 @@ class DetallesPeliculaController : UIViewController {
         lblReparto.text = pelicula.reparto
         lblCancion.text = pelicula.cancion
         lblVestido.text = pelicula.vestido
+    }
+    
+    @IBAction func doTapEliminar(_ sender: Any) {
     }
 }
