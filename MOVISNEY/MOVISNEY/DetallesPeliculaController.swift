@@ -43,5 +43,8 @@ class DetallesPeliculaController : UIViewController {
     }
     
     @IBAction func doTapEliminar(_ sender: Any) {
+        callbackEliminarPelicula!(indice)
+        self.navigationController!.popViewController(animated: true)
     }
+    
 }
