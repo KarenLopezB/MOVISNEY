@@ -183,35 +183,109 @@ Q2FsaWZpY2FjacOzbgA
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXM-H3-yva">
-                                <rect key="frame" x="108" y="96" width="197" height="21"/>
+                                <rect key="frame" x="20" y="96" width="78" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
                                 <color key="textColor" red="0.21322586769999999" green="0.045668713210000003" blue="0.2969543147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwT-sX-mbK">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="txA-fY-pMC">
+                                <rect key="frame" x="106" y="96" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYR-y0-Ito">
-                                        <rect key="frame" x="319" y="651" width="54" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
-                                        <state key="normal" title="Editar">
-                                            <color key="titleColor" red="0.27484828598631972" green="0.10904966367454844" blue="0.51554404145077726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="7jq-NW-Dsv" kind="show" id="KZd-zH-Tlb"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l61-Jv-PvE">
+                                <rect key="frame" x="89" y="130" width="305" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uQS-p4-n18">
+                                <rect key="frame" x="108" y="166" width="286" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mcH-xD-7nI">
+                                <rect key="frame" x="127" y="208" width="267" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wop-OE-p6F">
+                                <rect key="frame" x="20" y="300" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G6a-1U-ehx">
+                                <rect key="frame" x="20" y="425" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YdC-sR-zAI">
+                                <rect key="frame" x="89" y="480" width="305" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0T-e3-lzK">
+                                <rect key="frame" x="20" y="567" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6GM-hR-u4e">
+                                <rect key="frame" x="159" y="604" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3h-cN-27q">
+                                <rect key="frame" x="159" y="651" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu2-T7-LVx">
+                                <rect key="frame" x="299" y="766" width="74" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <state key="normal" title="Eliminar">
+                                    <color key="titleColor" red="0.45336787564766834" green="0.068694736098634954" blue="0.079656728372051053" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapEliminar:" destination="7jq-NW-Dsv" eventType="touchUpInside" id="m24-Bt-EYl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OgP-bS-S4I"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Editar" id="kA4-GJ-PxV">
+                            <color key="tintColor" red="0.21322586769999999" green="0.045668713210000003" blue="0.2969543147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="doTapEditar:" destination="5In-NI-4qp" id="DtM-xF-fj9"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnEditar" destination="kA4-GJ-PxV" id="ytH-gz-9Qm"/>
+                        <outlet property="btnEliminar" destination="wu2-T7-LVx" id="bje-mw-wvq"/>
                         <outlet property="lblAno1" destination="hZL-BF-wJa" id="Ywv-ef-sUx"/>
                         <outlet property="lblCalificacion1" destination="Cuj-vZ-coK" id="tv9-L8-LBS"/>
                         <outlet property="lblCancion" destination="cbu-Vv-28O" id="5Ma-5v-cgg"/>
@@ -222,6 +296,16 @@ Q2FsaWZpY2FjacOzbgA
                         <outlet property="lblNombre1" destination="xXM-H3-yva" id="hxw-H5-Vg7"/>
                         <outlet property="lblReparto" destination="3yB-S0-yW8" id="xyX-b8-mKr"/>
                         <outlet property="lblVestido" destination="aMW-ya-NTf" id="Kly-sD-bdc"/>
+                        <outlet property="txtAno" destination="l61-Jv-PvE" id="Wil-dP-Nfn"/>
+                        <outlet property="txtCalificacion" destination="mcH-xD-7nI" id="3rJ-G3-jRL"/>
+                        <outlet property="txtCancion" destination="6GM-hR-u4e" id="ZK5-g7-zrg"/>
+                        <outlet property="txtDescripcion" destination="G6a-1U-ehx" id="v99-dQ-i7a"/>
+                        <outlet property="txtDirectores" destination="Wop-OE-p6F" id="Jk1-1I-m8a"/>
+                        <outlet property="txtDuracion" destination="uQS-p4-n18" id="BYv-kf-kuK"/>
+                        <outlet property="txtEstreno" destination="YdC-sR-zAI" id="9Tn-l2-Xbl"/>
+                        <outlet property="txtNombre" destination="txA-fY-pMC" id="PwZ-77-MHD"/>
+                        <outlet property="txtReparto" destination="O0T-e3-lzK" id="FK9-2C-2yb"/>
+                        <outlet property="txtVestido" destination="j3h-cN-27q" id="EzZ-s7-MBW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8i-Cs-SjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -264,17 +348,6 @@ Q2FsaWZpY2FjacOzbgA
                                         <state key="normal" title="Guardar">
                                             <color key="titleColor" red="0.274848286" green="0.10904966369999999" blue="0.51554404149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wu2-T7-LVx">
-                                        <rect key="frame" x="308" y="696" width="74" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
-                                        <state key="normal" title="Eliminar">
-                                            <color key="titleColor" red="0.45336787564766834" green="0.068694736098634954" blue="0.079656728372051053" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="doTapEliminar:" destination="7jq-NW-Dsv" eventType="touchUpInside" id="m24-Bt-EYl"/>
-                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMj-1b-pSD">
                                         <rect key="frame" x="20" y="201" width="374" height="30"/>
