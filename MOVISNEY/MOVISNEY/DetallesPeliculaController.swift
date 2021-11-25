@@ -15,6 +15,7 @@ class DetallesPeliculaController : UIViewController {
     var indice :Int?
 
     var callbackEliminarPelicula : ((Int) -> Void)?
+    var callbackActualizarTablaPeliculas : ((Int) -> Void)?
     
     var pelicula : Pelicula = Pelicula(nombre: "", año: "", duracion: "", calificacion: "", directores: "", descripcion: "", estreno: "", reparto: "", cancion: "", vestido: "")
     
@@ -42,6 +43,7 @@ class DetallesPeliculaController : UIViewController {
     
     @IBOutlet weak var btnEliminar: UIButton!
     @IBOutlet weak var btnEditar: UIBarButtonItem!
+    @IBOutlet weak var btnCancelar: UIButton!
     
     var editando = false
     
@@ -81,11 +83,43 @@ class DetallesPeliculaController : UIViewController {
         txtReparto.isHidden = true
         txtCancion.isHidden = true
         txtVestido.isHidden = true
+        btnCancelar.isHidden = true
     }
     
     @IBAction func doTapEliminar(_ sender: Any) {
         callbackEliminarPelicula!(indice!)
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func doTapCancelarrr(_ sender: Any) {
+        editando = false
+        
+        lblNombre1.isHidden = false
+        lblAno1.isHidden = false
+        lblDuracion1.isHidden = false
+        lblCalificacion1.isHidden = false
+        lblDirectores1.isHidden = false
+        lblDescripcion.isHidden = false
+        lblEstreno.isHidden = false
+        lblReparto.isHidden = false
+        lblCancion.isHidden = false
+        lblVestido.isHidden = false
+        
+        txtNombre.isHidden = true
+        txtAno.isHidden = true
+        txtDuracion.isHidden = true
+        txtCalificacion.isHidden = true
+        txtDirectores.isHidden = true
+        txtDescripcion.isHidden = true
+        txtEstreno.isHidden = true
+        txtReparto.isHidden = true
+        txtCancion.isHidden = true
+        txtVestido.isHidden = true
+        
+        btnEliminar.isHidden = false
+        btnEditar.title = "Editar"
+        btnCancelar.isHidden = true
     }
     
     @IBAction func doTapEditar(_ sender: Any) {
@@ -116,7 +150,14 @@ class DetallesPeliculaController : UIViewController {
             
             btnEliminar.isHidden = true
             btnEditar.title = "Guardar"
+            btnCancelar.isHidden = false
         } else {
+            pelicula?.nombre = txtNombre.text
+            
+            lblNombre1.text = txtNombre.text
+            
+            callbackActualizarTablaPeliculas!()
+            
             lblNombre1.isHidden = false
             lblAno1.isHidden = false
             lblDuracion1.isHidden = false
@@ -141,6 +182,7 @@ class DetallesPeliculaController : UIViewController {
             
             btnEliminar.isHidden = false
             btnEditar.title = "Editar"
+            btnCancelar.isHidden = true
         }
     }
 }

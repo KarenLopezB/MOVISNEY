@@ -270,6 +270,16 @@ Q2FsaWZpY2FjacOzbgA
                                     <action selector="doTapEliminar:" destination="7jq-NW-Dsv" eventType="touchUpInside" id="m24-Bt-EYl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-vv-69y">
+                                <rect key="frame" x="46" y="766" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancelar">
+                                    <color key="titleColor" red="0.21322586769999999" green="0.045668713210000003" blue="0.2969543147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapCancelarrr:" destination="5In-NI-4qp" eventType="touchUpInside" id="spN-Vl-dkx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OgP-bS-S4I"/>
@@ -284,6 +294,7 @@ Q2FsaWZpY2FjacOzbgA
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="btnCancelar" destination="e0D-vv-69y" id="10d-VZ-f5R"/>
                         <outlet property="btnEditar" destination="kA4-GJ-PxV" id="ytH-gz-9Qm"/>
                         <outlet property="btnEliminar" destination="wu2-T7-LVx" id="bje-mw-wvq"/>
                         <outlet property="lblAno1" destination="hZL-BF-wJa" id="Ywv-ef-sUx"/>
