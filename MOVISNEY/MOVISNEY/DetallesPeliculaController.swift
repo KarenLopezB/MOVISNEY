@@ -11,13 +11,11 @@ import UIKit
 
 class DetallesPeliculaController : UIViewController {
 
-    var contacto : Pelicula?
-    var indice :Int?
+    var pelicula : Pelicula?
+    var indice : Int?
 
     var callbackEliminarPelicula : ((Int) -> Void)?
     var callbackActualizarTablaPeliculas : ((Int) -> Void)?
-    
-    var pelicula : Pelicula = Pelicula(nombre: "", año: "", duracion: "", calificacion: "", directores: "", descripcion: "", estreno: "", reparto: "", cancion: "", vestido: "")
     
     @IBOutlet weak var lblNombre1: UILabel!
     @IBOutlet weak var lblAno1: UILabel!
@@ -152,11 +150,29 @@ class DetallesPeliculaController : UIViewController {
             btnEditar.title = "Guardar"
             btnCancelar.isHidden = false
         } else {
-            pelicula?.nombre = txtNombre.text
-            
+            pelicula?.nombre = txtNombre.text!
+            pelicula?.año = txtAno.text!
+            pelicula?.duracion = txtDuracion.text!
+            pelicula?.calificacion = txtCalificacion.text!
+            pelicula?.directores = txtDirectores.text!
+            pelicula?.descripcion = txtDescripcion.text!
+            pelicula?.estreno = txtEstreno.text!
+            pelicula?.reparto = txtReparto.text!
+            pelicula?.cancion = txtCancion.text!
+            pelicula?.vestido = txtVestido.text!
+                    
             lblNombre1.text = txtNombre.text
+            lblAno1.text = txtAno.text
+            lblDuracion1.text = txtDuracion.text
+            lblCalificacion1.text = txtCalificacion.text
+            lblDirectores1.text = txtDirectores.text
+            lblDescripcion.text = txtDescripcion.text
+            lblEstreno.text = txtEstreno.text
+            lblReparto.text = txtReparto.text
+            lblCancion.text = txtCancion.text
+            lblVestido.text = txtVestido.text
             
-            callbackActualizarTablaPeliculas!()
+            callbackActualizarTablaPeliculas!(<#Int#>)
             
             lblNombre1.isHidden = false
             lblAno1.isHidden = false
