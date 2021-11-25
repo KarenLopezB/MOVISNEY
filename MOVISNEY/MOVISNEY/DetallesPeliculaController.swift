@@ -12,10 +12,10 @@ import UIKit
 class DetallesPeliculaController : UIViewController {
 
     var pelicula : Pelicula?
-    var indice : Int?
+    var indice : Int = -1
 
     var callbackEliminarPelicula : ((Int) -> Void)?
-    var callbackActualizarTablaPeliculas : ((Int) -> Void)?
+    var callbackActualizarTablaPeliculas : (() -> Void)?
     
     @IBOutlet weak var lblNombre1: UILabel!
     @IBOutlet weak var lblAno1: UILabel!
@@ -85,7 +85,7 @@ class DetallesPeliculaController : UIViewController {
     }
     
     @IBAction func doTapEliminar(_ sender: Any) {
-        callbackEliminarPelicula!(indice!)
+        callbackEliminarPelicula!(indice)
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -172,7 +172,7 @@ class DetallesPeliculaController : UIViewController {
             lblCancion.text = txtCancion.text
             lblVestido.text = txtVestido.text
             
-            callbackActualizarTablaPeliculas!(<#Int#>)
+            callbackActualizarTablaPeliculas!()
             
             lblNombre1.isHidden = false
             lblAno1.isHidden = false

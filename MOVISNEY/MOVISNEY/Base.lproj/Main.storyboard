@@ -73,7 +73,7 @@ Q2FsaWZpY2FjacOzbgA
                                             <outlet property="lblCalificacion" destination="aqS-j9-txC" id="rK3-AT-QGu"/>
                                             <outlet property="lblDuracion" destination="SEP-9s-mlc" id="hZ3-cc-JdD"/>
                                             <outlet property="lblNombre" destination="Yqq-63-Ia2" id="EJ2-4R-SbT"/>
-                                            <segue destination="5In-NI-4qp" kind="show" id="4bS-Ze-woK"/>
+                                            <segue destination="5In-NI-4qp" kind="show" identifier="goToEdicion" id="4bS-Ze-woK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -180,8 +180,8 @@ Q2FsaWZpY2FjacOzbgA
                                 <color key="textColor" red="0.21322586769999999" green="0.045668713210000003" blue="0.2969543147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXM-H3-yva">
-                                <rect key="frame" x="20" y="96" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXM-H3-yva">
+                                <rect key="frame" x="20" y="96" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
                                 <color key="textColor" red="0.21322586769999999" green="0.045668713210000003" blue="0.2969543147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
